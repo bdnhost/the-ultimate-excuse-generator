@@ -219,13 +219,34 @@ const App: React.FC = () => {
         </div>
       )}
 
-      <HistoryList 
-        history={history} 
+      <HistoryList
+        history={history}
         onSelect={(item) => {
           setResult(item);
           window.scrollTo({ top: 300, behavior: 'smooth' });
-        }} 
+        }}
       />
+
+      {/* Footer */}
+      <footer className="w-full mt-8 mb-4 text-center">
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-sm border border-slate-200">
+          <p className="text-slate-500 text-sm">
+            פותח באהבה על ידי{' '}
+            <a
+              href="https://bdnhost.co.il"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-bold hover:text-secondary transition-colors"
+            >
+              BDNHOST
+            </a>
+            {' '}🚀
+          </p>
+          <p className="text-slate-400 text-xs mt-1">
+            פתרונות אירוח ופיתוח אתרים
+          </p>
+        </div>
+      </footer>
 
     </div>
   );
