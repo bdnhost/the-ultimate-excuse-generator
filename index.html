@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>מכונת התירוצים המופלאה</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Rubik', 'sans-serif'],
+              round: ['Varela Round', 'sans-serif'],
+            },
+            colors: {
+              primary: '#ff6b6b',    // Playful Red/Pink
+              secondary: '#4ecdc4',  // Teal/Cyan
+              accent: '#ffe66d',     // Yellow
+              surface: '#ffffff',
+              background: '#f7f9fc',
+            },
+            boxShadow: {
+              'comic': '4px 4px 0px 0px rgba(0,0,0,0.15)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+        background-color: #f0fdf4; /* Fallback */
+        background-image: radial-gradient(#4ecdc4 0.5px, transparent 0.5px), radial-gradient(#ff6b6b 0.5px, #fefce8 0.5px);
+        background-size: 20px 20px;
+        color: #334155;
+      }
+      .comic-border {
+        border: 3px solid #334155;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
