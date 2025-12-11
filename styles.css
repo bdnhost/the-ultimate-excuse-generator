@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Rubik', sans-serif;
+  --font-round: 'Varela Round', sans-serif;
+  --color-primary: #ff6b6b;
+  --color-secondary: #4ecdc4;
+  --color-accent: #ffe66d;
+  --color-surface: #ffffff;
+  --color-background: #f7f9fc;
+  --shadow-comic: 4px 4px 0px 0px rgba(0,0,0,0.15);
+}
+
+body {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  background-color: #f0fdf4;
+  background-image: radial-gradient(#4ecdc4 0.5px, transparent 0.5px), radial-gradient(#ff6b6b 0.5px, #fefce8 0.5px);
+  background-size: 20px 20px;
+  color: #334155;
+}
+
+.comic-border {
+  border: 3px solid #334155;
+}
