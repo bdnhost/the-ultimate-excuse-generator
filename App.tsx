@@ -233,7 +233,7 @@ const App: React.FC = () => {
           <p className="text-slate-500 text-sm">
             פותח באהבה על ידי{' '}
             <a
-              href="https://bdnhost.co.il"
+              href="https://bdnhost.net"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary font-bold hover:text-secondary transition-colors"
