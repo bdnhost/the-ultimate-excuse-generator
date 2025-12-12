@@ -1,7 +1,7 @@
 import { Situation, Style, ExcuseResponse } from '../types';
 
 // API endpoint - uses PHP proxy in production to protect API key
-const API_ENDPOINT = '/api/generate.php';
+const API_ENDPOINT = './api/generate.php';
 
 export const generateExcuse = async (
   situation: string,
